@@ -1,0 +1,63 @@
+body, * {
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#profile-pic > img {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.jumbotron {
+    padding: 25px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(184,184,184,1);
+    box-shadow: 0px 0px 2px 1px rgba(184,184,184,1);
+}
+
+.profile-div {
+    padding-right: 30px;
+}
+
+.profile-details {
+    margin-top: 10px;
+}
+
+.company {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.designation {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.month {
+    text-transform: uppercase;
+}
+
+#social > a {
+    margin-right: 10px;
+}
+
+#name {
+    margin: 0px;
+}
+
+#profile-divider {
+    margin: 10px 0px !important;
+}
+
+#phone {
+    margin: 5px 0px;
+}
+
+#phone > p {
+    margin: 0px;
+}
+
+.tags > span {
+    color: gray;
+}
