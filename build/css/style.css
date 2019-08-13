@@ -4,30 +4,40 @@ body {
 #side-pane {
   transform: rotate(-90deg);
   transform-origin: -40px;
-  position: absolute;
+  position: fixed;
   top: 70%;
   transition: 0.3s; }
   #side-pane ul {
     list-style: none; }
     #side-pane ul li {
       display: inline;
-      padding: 20px; }
+      padding: 10px 0px;
+      margin: 0px 20px; }
+      #side-pane ul li a {
+        text-decoration: none; }
+      #side-pane ul li:hover {
+        border-bottom: solid 3px #007bff; }
 
 .toggle-side-pane {
   transform-origin: 40px !important; }
 
 #main-content {
-  position: absolute;
+  position: fixed;
   left: 100px;
   top: 30%;
-  transition: 0.3s; }
+  transition: 0.3s;
+  height: 100%; }
 
 .move-main-content {
   top: 5% !important; }
 
 #content {
+  height: 75%;
   display: none;
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  overflow: auto; }
+  #content .details {
+    height: 100%; }
 
 .display-content {
   display: block !important; }

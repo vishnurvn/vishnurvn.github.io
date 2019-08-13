@@ -7,14 +7,21 @@ body {
 #side-pane {
 	transform: rotate(-90deg);
 	transform-origin: -40px;
-	position: absolute;
+	position: fixed;
 	top: 70%;
 	transition: $transition-time;
 	ul {
 		list-style: none;
 		li {
 			display: inline;
-			padding: 20px;
+			padding: 10px 0px;
+			margin: 0px 20px;
+			a {
+				text-decoration: none;
+			}
+			&:hover {
+				border-bottom: solid 3px #007bff;
+			}
 		}
 	}
 }
@@ -24,10 +31,11 @@ body {
 }
 
 #main-content {
-	position: absolute;
+	position: fixed;
 	left: 100px;
 	top: 30%;
 	transition: $transition-time;
+	height: 100%;
 }
 
 .move-main-content {
@@ -35,8 +43,13 @@ body {
 }
 
 #content {
+	height: 75%;
 	display: none;
 	margin: 20px 0px;
+	overflow: auto;
+	.details {
+		height: 100%;
+	}
 }
 
 .display-content {
