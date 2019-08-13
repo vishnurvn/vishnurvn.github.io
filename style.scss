@@ -1,0 +1,48 @@
+$transition-time: 0.3s;
+
+body {
+	font-size: 1.2em;
+}
+
+#side-pane {
+	transform: rotate(-90deg);
+	transform-origin: -40px;
+	position: absolute;
+	top: 70%;
+	transition: $transition-time;
+	ul {
+		list-style: none;
+		li {
+			display: inline;
+			padding: 20px;
+		}
+	}
+}
+
+.toggle-side-pane {
+	transform-origin: 40px !important;
+}
+
+#main-content {
+	position: absolute;
+	left: 100px;
+	top: 30%;
+	transition: $transition-time;
+}
+
+.move-main-content {
+	top: 5% !important;
+}
+
+#content {
+	display: none;
+	margin: 20px 0px;
+}
+
+.display-content {
+	display: block !important;
+}
+
+.container {
+	padding: 0px 0px 0px 5px;
+}

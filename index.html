@@ -1,109 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./masterstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Profile</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./build/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron col-12">
-            <div class="col-3 profile-div">
-                <div id="profile-pic">
-                    <img src="ppic.png" alt="profile-pic" height="170", width="170">
-                </div>
-            </div>
-            <div class="col-12 profile-div">
-                <div class="profile-details">
-                    <h2 id="name">Vishnu Raveendran</h2>
-                    <hr class="my-4" id="profile-divider">
-                    <div>
-                        <h5 class="tags">
-                            <span>#Full Stack</span>
-                            <span>#Machine Learning</span>
-                            <span>#NLP</span>
-                            <span>#Automation</span>
-                        </h5>
-                    </div>
-                    <div id="social">
-                        <a href="mailto:vishnunilambure@gmail.com" target="_blank"><img src="./icons/gmail.svg" alt="" height="25", width="25"></a>
-                        <a href="https://github.com/vishnurvn" target="_blank"><img src="./icons/github-logo.svg" alt="" height="25", width="25"></a>
-                        <a href="https://github.com/vishnurvn" target="_blank"><img src="./icons/linkedin.svg" alt="" height="25", width="25"></a>
-                    </div>
-                    <div id="phone">
-                        <span>Phone: </span>
-                        <span>+91 9037-435-628</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron col-12">
-            <h5>Summary</h5>
-            <p>
-                Python developer with ~2 years of overall experience in developing and testing frontend/backend applications. Have employed machine learning algorithms and techniques including deep learning and Natural Language Processing. Good at multiple programming languages and Machine Learning mathematical concepts. Vishnu encourages developing industry standard maintainable, extensible and readable code complying with the respective coding standards. Seeking career opportunities in NLP and machine learning, but is open to analytics, backend/frontend/fullstack development as well.
-            </p>
-        </div>
-        <div>
-            <div class="row">
-                <div class="col-8">
-                    <div class="experience jumbotron">
-                        <h5>Experience</h5>
-                        <div>
-                            <span class="company">Accenture, </span>
-                            <span class="designation">Application Development Analyst</span>
-                            <div class="dates">
-                                <span class="month">SEP</span>
-                                <span class="from-year">2017</span>
-                                <span>to</span>
-                                <span class="to-year">Present</span>
-                            </div>
-                            <div>
-                                Job Discipline: Currently working as a Python developer and an internal automation consultant. Developing modules for an automation tool and creating proof of concepts for new automation scenarios. Developed and deployed a Q&A dialog system to accelerate the operations internally to reduce team training time. Developed an xPath management tool for renewing and managing existing xpaths after application changes. Currently working on a test automation framework.
-                            </div>
-                        </div>
-                        <hr>
-                        <div>
-                            <span class="company">Accenture, </span>
-                            <span class="designation">Application Development Analyst</span>
-                            <div class="dates">
-                                <span class="month">SEP</span>
-                                <span class="from-year">2017</span>
-                                <span>to</span>
-                                <span class="to-year">Present</span>
-                            </div>
-                            <div>
-                                Job Discipline: Currently working as a Python developer and an internal automation consultant. Developing modules for an automation tool and creating proof of concepts for new automation scenarios. Developed and deployed a Q&A dialog system to accelerate the operations internally to reduce team training time. Developed an xPath management tool for renewing and managing existing xpaths after application changes. Currently working on a test automation framework.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education jumbotron">
-                        <h5>Education</h5>
-                        <span class="company">Government Engineering College, Thrissur</span>
-                        <span class="designation">Bachelor of Technology (Mechanical)</span>
-                        <div class="dates">
-                            <span class="from-month">AUG</span>
-                            <span class="from-year">2013</span>
-                            <span>to</span>
-                            <span class="to-month">MAY</span>
-                            <span class="to-year">2017</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="jumbotron">
-                        <div class="skills">
-                            One, Two
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="side-pane">
+		<ul>
+			<li><a href="#summary">summary</a></li>
+			<li><a href="#experience">experience</a></li>
+			<li><a href="#">skills</a></li>
+			<li><a href="#">education</a></li>
+		</ul>
+	</div>
+	<div id="main-content">
+		<h1>Vishnu Raveendran</h1>
+		<div id="tag">
+			<h3>
+				<span>#Something</span>
+			</h3>
+		</div>
+		<button type="button" id="toggle-side-pane-button" class="btn btn-outline-primary btn-lg">View Profile</button>
+		<div id="content" class="container">
+			<div class="details">
+				<div class="title">
+					<h4>Summary</h4>
+				</div>
+				<div class="description">
+					<p>Python developer with ~2 years of overall experience in developing and testing frontend/backend applications. Have employed machine learning algorithms and techniques including deep learning and Natural Language Processing. Good at multiple programming languages and Machine Learning mathematical concepts. Vishnu encourages developing industry standard maintainable, extensible and readable code complying with the respective coding standards. Seeking career opportunities in NLP and machine learning, but is open to analytics, backend/frontend/fullstack development as well.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </html>
-
