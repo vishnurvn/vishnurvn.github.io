@@ -8,7 +8,7 @@ body {
 	transform: rotate(-90deg);
 	transform-origin: -40px;
 	position: fixed;
-	top: 70%;
+	top: 680px;
 	transition: $transition-time;
 	ul {
 		list-style: none;
@@ -36,6 +36,15 @@ body {
 	top: 30%;
 	transition: $transition-time;
 	height: 100%;
+	#title {
+		font-size: 3.5em;
+	}
+	#tag > h3 {
+		margin-bottom: 16px;
+		span {
+			color: gray;
+		} 
+	}
 }
 
 .move-main-content {
