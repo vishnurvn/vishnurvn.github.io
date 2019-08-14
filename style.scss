@@ -101,6 +101,29 @@ body {
     }
 }
 
+#experience {
+    .description {
+        .location {
+            font-style: italic;
+        }
+        .from-month, .to-month {
+            text-transform: uppercase;
+            font-size: 0.8em;
+            color: gray;
+        }
+        .from-year, .to-year {
+            font-size: 0.8em;
+            color: gray;
+        }
+    }
+    .skills {
+        color: gray;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 .display-content {
     display: block !important;
 }

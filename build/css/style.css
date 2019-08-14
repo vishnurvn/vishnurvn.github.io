@@ -71,6 +71,23 @@ body {
   #content .details {
     height: 100%; }
 
+#experience .description .location {
+  font-style: italic; }
+
+#experience .description .from-month, #experience .description .to-month {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: gray; }
+
+#experience .description .from-year, #experience .description .to-year {
+  font-size: 0.8em;
+  color: gray; }
+
+#experience .skills {
+  color: gray; }
+  #experience .skills:hover {
+    text-decoration: underline; }
+
 .display-content {
   display: block !important; }
 
