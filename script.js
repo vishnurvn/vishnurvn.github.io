@@ -9,4 +9,10 @@ sidePaneButton.addEventListener("click", () => {
 	sidePane.classList.toggle("toggle-side-pane");
 	mainContent.classList.toggle("move-main-content");
 	content.classList.toggle("display-content");
+
+    if (sidePaneButton.innerHTML == "View Profile") {
+        sidePaneButton.innerHTML = "Hide Profile"
+    } else {
+        sidePaneButton.innerHTML = "View Profile"
+    }
 })
