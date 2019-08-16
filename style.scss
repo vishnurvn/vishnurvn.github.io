@@ -53,6 +53,24 @@ body {
     }
 }
 
+@media screen and (max-width: 320px) {
+    #side-pane {
+        top: 725px;
+        ul {
+            li {
+                padding: 6px 0px;
+                margin: 0px 16px;
+            }
+            a {
+                font-size: 0.9em;
+            }
+        }
+    }
+    .toggle-side-pane {
+        transform-origin: 30px !important;
+    }
+}
+
 
 #main-content {
     position: fixed;
@@ -96,23 +114,27 @@ body {
     display: none;
     margin: 20px 0px;
     overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
     .details {
         height: 100%;
+        scroll-snap-align: center;
     }
 }
 
 #experience {
+    overflow-y: scroll;
     .description {
         .location {
             font-style: italic;
         }
         .from-month, .to-month {
             text-transform: uppercase;
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: gray;
         }
         .from-year, .to-year {
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: gray;
         }
     }
@@ -120,6 +142,23 @@ body {
         color: gray;
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+.details {
+    .description {
+        .skill-list {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            li {
+                display: inline-block;
+                margin: 10px;
+                i {
+                    font-size: 1.8em;
+                }
+            }
         }
     }
 }

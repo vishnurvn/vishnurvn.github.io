@@ -36,6 +36,17 @@ body {
   .toggle-side-pane {
     transform-origin: 30px !important; } }
 
+@media screen and (max-width: 320px) {
+  #side-pane {
+    top: 725px; }
+    #side-pane ul li {
+      padding: 6px 0px;
+      margin: 0px 16px; }
+    #side-pane ul a {
+      font-size: 0.9em; }
+  .toggle-side-pane {
+    transform-origin: 30px !important; } }
+
 #main-content {
   position: fixed;
   left: 100px;
@@ -67,26 +78,38 @@ body {
   height: 75%;
   display: none;
   margin: 20px 0px;
-  overflow: auto; }
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; }
   #content .details {
-    height: 100%; }
+    height: 100%;
+    scroll-snap-align: center; }
 
-#experience .description .location {
-  font-style: italic; }
+#experience {
+  overflow-y: scroll; }
+  #experience .description .location {
+    font-style: italic; }
+  #experience .description .from-month, #experience .description .to-month {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: gray; }
+  #experience .description .from-year, #experience .description .to-year {
+    font-size: 0.9em;
+    color: gray; }
+  #experience .skills {
+    color: gray; }
+    #experience .skills:hover {
+      text-decoration: underline; }
 
-#experience .description .from-month, #experience .description .to-month {
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: gray; }
-
-#experience .description .from-year, #experience .description .to-year {
-  font-size: 0.8em;
-  color: gray; }
-
-#experience .skills {
-  color: gray; }
-  #experience .skills:hover {
-    text-decoration: underline; }
+.details .description .skill-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+  .details .description .skill-list li {
+    display: inline-block;
+    margin: 10px; }
+    .details .description .skill-list li i {
+      font-size: 1.8em; }
 
 .display-content {
   display: block !important; }
